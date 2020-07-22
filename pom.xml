@@ -28,7 +28,19 @@
         <artifactId>spring-webmvc</artifactId>
         <version>5.1.9.RELEASE</version>
       </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>5.0.10.RELEASE</version>
+        <optional>true</optional>
+      </dependency>
       <!--spring 相关依赖 结束-->
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.6</version>
+        <optional>true</optional>
+      </dependency>
 
       <!--数据源配置 start-->
       <dependency>
@@ -115,6 +127,20 @@
         <artifactId>javax.servlet-api</artifactId>
         <version>3.1.0</version>
       </dependency>
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>1.19</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>aliyun</id>
+      <name>aliyun</name>
+      <url>https://maven.aliyun.com/repository/central</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
 </project>
