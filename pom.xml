@@ -7,6 +7,11 @@
   <name>study-dependencies</name>
   <packaging>pom</packaging>
 
+  <properties>
+    <spring.version>5.2.6.RELEASE</spring.version>
+  </properties>
+
+
 
   <dependencyManagement>
     <dependencies>
@@ -20,27 +25,35 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <version>5.1.12.RELEASE</version>
+        <version>${spring.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>5.1.13.RELEASE</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
-        <version>5.0.10.RELEASE</version>
+        <version>${spring.version}</version>
         <optional>true</optional>
       </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
       <!--spring 相关依赖 结束-->
+      <!--io utils -->
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
         <version>2.6</version>
         <optional>true</optional>
       </dependency>
+
+
 
       <!--数据源配置 start-->
       <dependency>
@@ -56,12 +69,12 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-tx</artifactId>
-        <version>5.1.6.RELEASE</version>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>druid</artifactId>
-        <version>1.1.9</version>
+        <version>${spring.version}</version>
       </dependency>
       <!--数据源配置end-->
 
@@ -93,7 +106,7 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
-        <version>5.1.12.RELEASE</version>
+        <version>${spring.version}</version>
       </dependency>
       <!--aop aspect 依赖 结束-->
 
@@ -131,6 +144,11 @@
         <groupId>org.yaml</groupId>
         <artifactId>snakeyaml</artifactId>
         <version>1.19</version>
+      </dependency>
+      <dependency>
+        <groupId>com.david.study</groupId>
+        <artifactId>spring-metadata</artifactId>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
